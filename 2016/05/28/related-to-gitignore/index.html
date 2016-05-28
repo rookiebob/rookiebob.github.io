@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git tools," />
 
 
 
@@ -84,15 +84,27 @@
 
 
 
-<meta name="description" content="人生的每一次经历终将成为你的一笔财富">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
+
+这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="related-to-gitignore">
+<meta property="og:url" content="http://yoursite.com/2016/05/28/related-to-gitignore/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="人生的每一次经历终将成为你的一笔财富">
+<meta property="og:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
+
+这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/clipboard.png">
+<meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/16-5-9/66539158.jpg">
+<meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/p3.png">
+<meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/16-5-9/1164026.jpg">
+<meta property="og:updated_time" content="2016-05-28T10:00:15.363Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="人生的每一次经历终将成为你的一笔财富">
+<meta name="twitter:title" content="related-to-gitignore">
+<meta name="twitter:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
+
+这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta name="twitter:image" content="http://7xtucl.com1.z0.glb.clouddn.com/clipboard.png">
 
 
 
@@ -110,7 +122,7 @@
   };
 </script>
 
-  <title> Hexo </title>
+  <title> related-to-gitignore | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +250,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -262,10 +272,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/28/related-to-gitignore/" itemprop="url">
-                  related-to-gitignore
-                </a>
+                related-to-gitignore
               
             
           </h1>
@@ -312,9 +319,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说</p>
 </blockquote>
 <p>这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的增加，以及每个人的编辑器环境不同，会导致编译出的css文件有些许的不同，比如有人watch出的css文件里面会有charset声明：@charset “UTF-8”;这些文件的更改都被提交上来了。这个时候当我去拉代码时，每次都会出现不少的conflict，我必须停下来，更改scss文件，重新watch一次，才能把我的修改提交。时间一长，工作的效率就降低了。</p>
@@ -354,36 +359,44 @@
 <h6 id="5-优化git-commit的提交日志"><a href="#5-优化git-commit的提交日志" class="headerlink" title="5.优化git commit的提交日志"></a>5.优化git commit的提交日志</h6><p>git commit时尽量不要只是简单的 update，dev，bugfix等，因为这些标记确实不利于后续的问题定位查找。我们开发小组已经硬性规定，谁再提交这样简单的commit标记，要请吃水果，貌似有不少同学中招了~</p>
 <p>总之对于git工具的使用，还是需要慢慢摸索，不断实践的。当大家使用熟练后，再配合git GUI也是没问题的。最后，希望这篇文章能对大家有用，各位有什么好的git操作建议，欢迎交流~</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/git-tools/" rel="tag">#git tools</a>
+          
+        </div>
       
 
       
+
       
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -391,6 +404,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/28/related-to-gitignore/"
+           data-title="related-to-gitignore" data-url="http://yoursite.com/2016/05/28/related-to-gitignore/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -410,8 +431,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -454,6 +484,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-删除git对于该文件的追踪信息；"><span class="nav-number">1.</span> <span class="nav-text">1. 删除git对于该文件的追踪信息；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-更新-gitignore，把对应的规则写入-gitignore"><span class="nav-number">2.</span> <span class="nav-text">2. 更新 .gitignore，把对应的规则写入 .gitignore</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-add＋commit-push。"><span class="nav-number">3.</span> <span class="nav-text">3. add＋commit + push。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PS-关于-gitignore无效还有另外一种解决方案，但是这个方案是有后遗症的，不推荐。"><span class="nav-number"></span> <span class="nav-text">PS:关于.gitignore无效还有另外一种解决方案，但是这个方案是有后遗症的，不推荐。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-每次提交代码前，仔细查看更改。"><span class="nav-number">0.1.</span> <span class="nav-text">1.每次提交代码前，仔细查看更改。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-pull和push最好带上分支名。"><span class="nav-number">0.2.</span> <span class="nav-text">2.pull和push最好带上分支名。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-配置git-alias，可以节省不少git操作时间"><span class="nav-number">0.3.</span> <span class="nav-text">3.配置git alias，可以节省不少git操作时间</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-git-alias，配置一下，可以节省不少git操作时间"><span class="nav-number">0.4.</span> <span class="nav-text">3.git alias，配置一下，可以节省不少git操作时间</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-关于git-rebase"><span class="nav-number">0.5.</span> <span class="nav-text">4.关于git rebase</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5-优化git-commit的提交日志"><span class="nav-number">0.6.</span> <span class="nav-text">5.优化git commit的提交日志</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -557,6 +598,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
