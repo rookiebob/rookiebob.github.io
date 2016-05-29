@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git tools," />
+  <meta name="keywords" content="工具,日常开发," />
 
 
 
@@ -84,26 +84,20 @@
 
 
 
-<meta name="description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
-
-这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta name="description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说">
 <meta property="og:type" content="article">
-<meta property="og:title" content="related-to-gitignore">
+<meta property="og:title" content="记一次.gitignore的操作细节">
 <meta property="og:url" content="http://yoursite.com/2016/05/28/related-to-gitignore/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
-
-这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta property="og:site_name" content="rookiebob's blog">
+<meta property="og:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说">
 <meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/clipboard.png">
 <meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/16-5-9/66539158.jpg">
 <meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/p3.png">
 <meta property="og:image" content="http://7xtucl.com1.z0.glb.clouddn.com/16-5-9/1164026.jpg">
-<meta property="og:updated_time" content="2016-05-28T10:00:15.363Z">
+<meta property="og:updated_time" content="2016-05-29T09:22:02.184Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="related-to-gitignore">
-<meta name="twitter:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说
-
-这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的">
+<meta name="twitter:title" content="记一次.gitignore的操作细节">
+<meta name="twitter:description" content="“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说">
 <meta name="twitter:image" content="http://7xtucl.com1.z0.glb.clouddn.com/clipboard.png">
 
 
@@ -122,7 +116,7 @@
   };
 </script>
 
-  <title> related-to-gitignore | Hexo </title>
+  <title> 记一次.gitignore的操作细节 | rookiebob's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -153,11 +147,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">rookiebob's blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">人生的每一次经历终将成为你的一笔财富，做一个有追求的前端手艺人！</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -272,7 +266,7 @@
             
             
               
-                related-to-gitignore
+                记一次.gitignore的操作细节
               
             
           </h1>
@@ -289,6 +283,37 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/日常开发/" itemprop="url" rel="index">
+                    <span itemprop="name">日常开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -319,9 +344,8 @@
       
 
       
-        <blockquote>
-<p>“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说</p>
-</blockquote>
+        <p>“作为一个刚上路的新手司机，git操作当然要远离各种炫酷的git GUI，因为这些GUI容易使你忽略git本身的工作流程，走向万劫不复的深渊“—-一位上路多年的老司机对我说</p>
+<a id="more"></a>
 <p>这个事情发生的背景是这样的，在我们的专题发布系统工程里面，本地开发的css文件采用scss实时watch编译方式，最终发布到线上时，也会重新压缩合并css文件，一直以来都没有什么问题。但是随着开发人员的增多，代码提交频次的增加，以及每个人的编辑器环境不同，会导致编译出的css文件有些许的不同，比如有人watch出的css文件里面会有charset声明：@charset “UTF-8”;这些文件的更改都被提交上来了。这个时候当我去拉代码时，每次都会出现不少的conflict，我必须停下来，更改scss文件，重新watch一次，才能把我的修改提交。时间一长，工作的效率就降低了。</p>
 <p>好了，有问题就解决呗，我考虑到scss文件本来在代码发布的时候会被编译成css文件，也会有相应的压缩合并等，那把css文件和css目录ignore不就好了吗？开发的时候，自己watch，发布的时候，依赖自动化工具脚本执行一系列watch更新打包操作，肯定不会有什么问题。于是，我轻车熟路的打开了.gitignore文件,啪啪啪，增加了css/忽略规则，commit提交。</p>
 <p>这个时候有css文件修改，git status 看一下，</p>
@@ -379,7 +403,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git-tools/" rel="tag">#git tools</a>
+            <a href="/tags/工具/" rel="tag">#工具</a>
+          
+            <a href="/tags/日常开发/" rel="tag">#日常开发</a>
           
         </div>
       
@@ -407,7 +433,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/05/28/related-to-gitignore/"
-           data-title="related-to-gitignore" data-url="http://yoursite.com/2016/05/28/related-to-gitignore/">
+           data-title="记一次.gitignore的操作细节" data-url="http://yoursite.com/2016/05/28/related-to-gitignore/">
       </div>
     
   </div>
@@ -444,10 +470,10 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="http://7xtucl.com1.z0.glb.clouddn.com/6936791.jpg"
                alt="rookiebob" />
           <p class="site-author-name" itemprop="name">rookiebob</p>
-          <p class="site-description motion-element" itemprop="description">人生的每一次经历终将成为你的一笔财富</p>
+          <p class="site-description motion-element" itemprop="description">rookiebob | 码农 | 前端手艺人</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -458,11 +484,18 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
